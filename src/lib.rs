@@ -67,4 +67,7 @@ pub use self::{
     time_designation::TimeDesignation, time_zone::TimeZone,
     timestamp::Timestamp,
 };
-pub use crate::{NaïveMinutes as NaiveMinutes, NaïveHours as NaiveHours, NaïveDays as NaiveDays, NaïveWeeks as NaiveWeeks};
+pub use crate::{
+    NaïveDays as NaiveDays, NaïveHours as NaiveHours,
+    NaïveMinutes as NaiveMinutes, NaïveWeeks as NaiveWeeks,
+};
