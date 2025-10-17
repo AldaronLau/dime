@@ -1,7 +1,7 @@
 use crate::{Date, Time};
 
 /// A naïve date and time (unspecified timezone)
-#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash, Debug)]
+#[derive(Copy, Clone, Hash, Debug)]
 #[repr(C, packed)]
 pub struct DateTime {
     /// The associated date
