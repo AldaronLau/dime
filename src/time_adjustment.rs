@@ -1,7 +1,7 @@
 use crate::DateTime;
 
 /// A time adjustment (like daylight savings time)
-#[derive(Copy, Clone, Hash, Debug)]
+#[derive(Copy, Clone, Debug)]
 #[repr(C, packed)]
 pub struct TimeAdjustment {
     /// The time to skip (skips directly to new time)

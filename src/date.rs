@@ -1,5 +1,5 @@
 /// A naïve date (unspecified timezone)
-#[derive(Copy, Clone, Hash, Debug)]
+#[derive(Copy, Clone, Debug)]
 #[repr(C, packed)]
 pub struct Date {
     /// Range: 0 ~ 65_535

@@ -1,5 +1,5 @@
 /// A naïve time (unspecified timezone)
-#[derive(Copy, Clone, Hash, Debug)]
+#[derive(Copy, Clone, Debug)]
 #[repr(C, packed)]
 pub struct Time {
     /// Range: 0 ~ 23
