@@ -1,2 +1,3 @@
-# library-template
-Template for library repositories 
+# Dime
+
+Daku time types
