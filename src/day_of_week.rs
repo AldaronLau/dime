@@ -1,4 +1,5 @@
 /// Day of the week
+#[derive(Copy, Clone, Eq, PartialEq, Hash, Debug)]
 #[repr(u8)]
 pub enum DayOfWeek {
     /// Monday

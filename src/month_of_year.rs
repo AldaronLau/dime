@@ -1,4 +1,5 @@
 /// Month of the year
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash, Debug)]
 #[repr(u8)]
 pub enum MonthOfYear {
     /// January
