@@ -1,11 +1,14 @@
 use core::fmt;
 
-/// Hours (without accounting for leap seconds)
+/// Hours
+///
+/// This is observed time, not clock time (doesn't account for leap seconds,
+/// always 60 minutes).
 #[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash, Debug)]
 #[repr(transparent)]
-pub struct NaïveHours(pub i64);
+pub struct Hours(pub i64);
 
-impl fmt::Display for NaïveHours {
+impl fmt::Display for Hours {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         self.0.fmt(f)?;
         f.write_str("hr")

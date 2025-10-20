@@ -42,17 +42,20 @@
 mod date;
 mod date_time;
 mod femtos;
+mod hours;
 #[allow(dead_code)] // FIXME
 mod leap_second;
 mod micros;
 mod millis;
+mod minutes;
 mod naive_days;
-mod naive_hours;
-mod naive_minutes;
+mod naive_months;
 mod naive_weeks;
+mod naive_years;
 mod nanos;
 mod picos;
 mod secs;
+mod subsec;
 mod time;
 mod time_adjustment;
 mod time_designation;
@@ -60,14 +63,15 @@ mod time_zone;
 mod timestamp;
 
 pub use self::{
-    date::Date, date_time::DateTime, femtos::Femtos, micros::Micros,
-    millis::Millis, naive_days::NaïveDays, naive_hours::NaïveHours,
-    naive_minutes::NaïveMinutes, naive_weeks::NaïveWeeks, nanos::Nanos,
-    picos::Picos, secs::Secs, time::Time, time_adjustment::TimeAdjustment,
+    date::Date, date_time::DateTime, femtos::Femtos, hours::Hours,
+    micros::Micros, millis::Millis, minutes::Minutes, naive_days::NaïveDays,
+    naive_months::NaïveMonths, naive_weeks::NaïveWeeks,
+    naive_years::NaïveYears, nanos::Nanos, picos::Picos, secs::Secs,
+    subsec::Subsec, time::Time, time_adjustment::TimeAdjustment,
     time_designation::TimeDesignation, time_zone::TimeZone,
     timestamp::Timestamp,
 };
 pub use crate::{
-    NaïveDays as NaiveDays, NaïveHours as NaiveHours,
-    NaïveMinutes as NaiveMinutes, NaïveWeeks as NaiveWeeks,
+    NaïveDays as NaiveDays, NaïveMonths as NaiveMonths,
+    NaïveWeeks as NaiveWeeks, NaïveYears as NaiveYears,
 };

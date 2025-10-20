@@ -1,6 +1,8 @@
 use core::fmt;
 
-/// Days (without accounting for timezone-specific time adjustments)
+/// Days (without accounting for DST, leap seconds, etc.)
+///
+/// A naïve day is always 24 hours
 #[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash, Debug)]
 #[repr(transparent)]
 pub struct NaïveDays(pub i64);
