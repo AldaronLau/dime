@@ -5,3 +5,12 @@ version = 4
 [[package]]
 name = "dime"
 version = "0.2.0"
+dependencies = [
+ "ranch",
+]
+
+[[package]]
+name = "ranch"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "10df8cac9c1b48cc5dadc41935fdfea16582e93fe1acc3a5052c42890020faa9"

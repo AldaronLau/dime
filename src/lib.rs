@@ -56,7 +56,6 @@ mod naive_weeks;
 mod naive_years;
 mod nanos;
 mod picos;
-mod ranged;
 mod secs;
 mod subsec;
 mod time;
@@ -66,28 +65,13 @@ mod time_zone;
 mod timestamp;
 
 pub use self::{
-    date::Date,
-    date_time::DateTime,
-    day_of_week::DayOfWeek,
-    femtos::Femtos,
-    hours::Hours,
-    micros::Micros,
-    millis::Millis,
-    minutes::Minutes,
-    month_of_year::MonthOfYear,
-    naive_days::NaïveDays,
-    naive_months::NaïveMonths,
-    naive_weeks::NaïveWeeks,
-    naive_years::NaïveYears,
-    nanos::Nanos,
-    picos::Picos,
-    ranged::{Error, RangedU8},
-    secs::Secs,
-    subsec::Subsec,
-    time::Time,
-    time_adjustment::TimeAdjustment,
-    time_designation::TimeDesignation,
-    time_zone::TimeZone,
+    date::Date, date_time::DateTime, day_of_week::DayOfWeek, femtos::Femtos,
+    hours::Hours, micros::Micros, millis::Millis, minutes::Minutes,
+    month_of_year::MonthOfYear, naive_days::NaïveDays,
+    naive_months::NaïveMonths, naive_weeks::NaïveWeeks,
+    naive_years::NaïveYears, nanos::Nanos, picos::Picos, secs::Secs,
+    subsec::Subsec, time::Time, time_adjustment::TimeAdjustment,
+    time_designation::TimeDesignation, time_zone::TimeZone,
     timestamp::Timestamp,
 };
 pub use crate::{

@@ -20,4 +20,5 @@ include = [
 ]
 rust-version = "1.85"
 
-[dependencies]
+[dependencies.ranch]
+version = "0.1.0"
