@@ -1,4 +1,4 @@
-/// A naïve time (unspecified timezone)
+/// A localized time (unspecified timezone)
 #[derive(Copy, Clone, Debug)]
 #[repr(C, packed)]
 pub struct Time {
@@ -8,4 +8,7 @@ pub struct Time {
     minute: u8,
     /// Range: 0 ~ 60_999 (can represent leap seconds)
     millis: u8,
+}
+
+impl Time {
 }

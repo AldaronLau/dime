@@ -1,6 +1,6 @@
 use crate::{Date, Time};
 
-/// A naïve date and time (unspecified timezone)
+/// A localized date and time (unspecified timezone)
 #[derive(Copy, Clone, Debug)]
 #[repr(C, packed)]
 pub struct DateTime {

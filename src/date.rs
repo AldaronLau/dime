@@ -1,4 +1,4 @@
-/// A naïve date (unspecified timezone)
+/// A localized date (unspecified timezone)
 #[derive(Copy, Clone, Debug)]
 #[repr(C, packed)]
 pub struct Date {
@@ -12,9 +12,9 @@ pub struct Date {
 
 impl Date {
     /// Get the year.
-    pub fn year(&self) -> u32 {
-        let era = u32::from(self.month >> 4);
+    pub const fn year(&self) -> u32 {
+        let era = (self.month >> 4) as u32;
 
-        u32::from(self.year) | (era << 16)
+        (self.year as u32) | (era << 16)
     }
 }
