@@ -41,6 +41,7 @@
 
 mod date;
 mod date_time;
+mod day_of_week;
 mod femtos;
 mod hours;
 #[allow(dead_code)] // FIXME
@@ -48,6 +49,7 @@ mod leap_second;
 mod micros;
 mod millis;
 mod minutes;
+mod month_of_year;
 mod naive_days;
 mod naive_months;
 mod naive_weeks;
@@ -63,8 +65,9 @@ mod time_zone;
 mod timestamp;
 
 pub use self::{
-    date::Date, date_time::DateTime, femtos::Femtos, hours::Hours,
-    micros::Micros, millis::Millis, minutes::Minutes, naive_days::NaïveDays,
+    date::Date, date_time::DateTime, day_of_week::DayOfWeek, femtos::Femtos,
+    hours::Hours, micros::Micros, millis::Millis, minutes::Minutes,
+    month_of_year::MonthOfYear, naive_days::NaïveDays,
     naive_months::NaïveMonths, naive_weeks::NaïveWeeks,
     naive_years::NaïveYears, nanos::Nanos, picos::Picos, secs::Secs,
     subsec::Subsec, time::Time, time_adjustment::TimeAdjustment,
