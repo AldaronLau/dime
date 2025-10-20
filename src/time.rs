@@ -10,5 +10,4 @@ pub struct Time {
     millis: u8,
 }
 
-impl Time {
-}
+impl Time {}

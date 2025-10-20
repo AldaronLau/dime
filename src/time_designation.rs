@@ -6,15 +6,12 @@ use core::fmt;
 pub struct TimeDesignation(u32);
 
 impl TimeDesignation {
-    /// TAI (continuous counting of SI second)
-    pub const TAI: Self = Self(0);
-
-    /// LORAN (always TAI-10s)
-    pub const LORAN: Self = Self(1);
-
     /// GPS (always TAI-19s)
     pub const GPS: Self = Self(2);
-
+    /// LORAN (always TAI-10s)
+    pub const LORAN: Self = Self(1);
+    /// TAI (continuous counting of SI second)
+    pub const TAI: Self = Self(0);
     /// UTC (currently TAI-37s, affected by leap seconds)
     pub const UTC: Self = Self(3);
 
