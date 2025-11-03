@@ -3,6 +3,12 @@
 version = 4
 
 [[package]]
+name = "as_repr"
+version = "1.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "74fb299e940315615022885ecd941b19f781aad197d93b31b2569f1f09f34f30"
+
+[[package]]
 name = "dime"
 version = "0.2.0"
 dependencies = [
@@ -11,6 +17,9 @@ dependencies = [
 
 [[package]]
 name = "ranch"
-version = "0.1.0"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "10df8cac9c1b48cc5dadc41935fdfea16582e93fe1acc3a5052c42890020faa9"
+checksum = "e5afc7c8f9a35c8a9fd644c7fb5933eeadab1d6a39f27e6b72e70cacf3a8d53f"
+dependencies = [
+ "as_repr",
+]
